@@ -1,10 +1,14 @@
 #!/bin/bash
 
-###### OfficeRemoval.sh #####################################
-# by Jake Benedict                                          #
-# v2.0 (05/12/16)                                           #
-# Reference: https://support.microsoft.com/en-us/kb/2398768 #
-#############################################################
+###############################################################
+#  Office 2011 Mac Removal                                    #
+#  officeremoval.sh                                           #
+#  v2.0 (6/29/16)                                             #
+#  By Jake Benedict                                           #
+#  Franklin & Marshall College                                #
+#  Reference: https://support.microsoft.com/en-us/kb/2398768  #
+###############################################################  
+
 
 ########################
 ### Aesthetic Set Up ###
@@ -14,7 +18,6 @@ printf '\e[8;20;86t' && clear ### Set window size ###
 
 bold=$(tput bold) ### Create Bold Text ###
 normal=$(tput sgr0) ### Create Normal Text ###
-
 
 
 
@@ -190,7 +193,6 @@ RemovalCancel()
 
 
 
-
 #########################
 ######## Welcome ########
 #########################
@@ -200,7 +202,6 @@ echo " ######################## ${bold}Microsoft Office 2011 Removal v2.0${norma
 printf "\n"
 echo "This script will now attempt to completely remove Microsoft Office 2011 from this Mac."
 printf "\n"
-
 
 
 
@@ -228,7 +229,6 @@ done
 printf "\n"
 echo "All Microsoft Applications have been quit."
 printf "\n"
-
 
 
 
@@ -274,7 +274,6 @@ done
 
 
 
-
 ####################################
 ###### Advanced Removal Tools ######
 ####################################
@@ -294,7 +293,6 @@ done
 #		break;;
 #	esac
 #done
-
 
 
 
