@@ -100,36 +100,36 @@ RemovalCancel()
 	exit 0
 }
 
-RemoveMicrosoftLicensingData()
-{
-	echo "Would you like to remove the licensing files for Office?"
-	echo "${bold}Note: This could remove licensing for newer versions of Office!${normal}"
-	select yn in "Yes" "No"; do
-	    case $yn in
-			
-			Yes) 
-			echo "Are you ${bold}sure${normal}?";
-			select yn in "Yes" "No"; do
-				case $yn in
-					Yes) 
-					RemoveOfficeLicensingFiles;
-					break;;
-
-					No ) 
-					printf "\n";
-					echo "Licensing files not removed";
-					printf "\n";
-					break;;
-				esac
-			done
-			break;;
-			
-			No ) 
-			printf "\n";
-			break;;
-		esac
-	done
-}
+#RemoveMicrosoftLicensingData()
+##{
+#	echo "Would you like to remove the licensing files for Office?"
+#	echo "${bold}Note: This could remove licensing for newer versions of Office!${normal}"
+#	select yn in "Yes" "No"; do
+#	    case $yn in
+#			
+#			Yes) 
+#			echo "Are you ${bold}sure${normal}?";
+#			select yn in "Yes" "No"; do
+#				case $yn in
+#					Yes) 
+#					RemoveOfficeLicensingFiles;
+#					break;;
+#
+#					No ) 
+#					printf "\n";
+#					echo "Licensing files not removed";
+#					printf "\n";
+#					break;;
+#				esac
+#			done
+#			break;;
+#			
+#			No ) 
+#			printf "\n";
+#			break;;
+#		esac
+#	done
+#}
 
 #MicrosoftDataRemoval()
 ##{
@@ -279,21 +279,21 @@ done
 ###### Advanced Removal Tools ######
 ####################################
 
-echo "Would you like to access the Advanced Removal Tools for Licensing, User Data, and Fonts?"
-select yn in "Yes" "No"; do
-    case $yn in
-		Yes) 
-		printf "\n \n";
-		RemoveMicrosoftLicensingData;
-		MicrosoftDataRemoval;
-		RemoveMicrosoftFontsQ
-		break;;
-
-		No )
-		printf "\n \n";
-		break;;
-	esac
-done
+#echo "Would you like to access the Advanced Removal Tools for Licensing, User Data, and Fonts?"
+#select yn in "Yes" "No"; do
+#    case $yn in
+#		Yes) 
+#		printf "\n \n";
+#		RemoveMicrosoftLicensingData;
+#		MicrosoftDataRemoval;
+#		RemoveMicrosoftFontsQ
+#		break;;
+#
+#		No )
+#		printf "\n \n";
+#		break;;
+#	esac
+#done
 
 
 
